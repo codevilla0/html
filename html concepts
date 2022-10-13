@@ -1,0 +1,547 @@
+HTML
+HTML stands for Hyper Text Markup Language
+•	What is hypertext?
+             In simple words, you can say hypertext is a text which contains a link to another text.
+
+•	What is a markup language?
+            A markup language is a computer language that consists of easily readable                   keywords, names, or tags that contribute to the overall formatting of a page’s appearance.
+
+Sytnax
+<html>
+<head>
+<title>First</title>
+</head>
+<body>
+<H1>This Heading</h1>
+</body>
+</html>
+	DOCTYPE! HTML: This is the declaration of the document type.
+	HTML: This is known as the HTML root element. It contains a head & body tag.
+	head: It contains meta-information about the document. It includes various tags like title, link, script. Etc
+	title: The title tag is used to display the title on the browsers tab
+	Body: the body content is what displays on the front end of the browser
+What are Tags in Html?
+HTML tags are simply keywords that specify how web browser formats and displays content on the screen
+
+Types of Tags in Html
+There are three types of tags in Html 
+
+1.	paired tags
+2.	unpaired tags
+3.	self-closing tags.
+
+•	Paired Tags
+Paired tags in Html are those tags that have both opening tags and closing tags.
+<h1>This is heading </h1>
+
+•	Unpaired Tags
+Unpaired tags in Html are those tags that have only an opening tag and do not have a closing tag.
+<br>
+<hr>
+
+•	Self-Closing Tags
+Self-closing tags in Html are those tags that do not require closing tags
+<img src=”url.png” alt=”this is an image”/>
+
+	Here you can see src, alt,  and  inside the opening tag they are known as attributes
+
+
+Basic HTML Tags
+
+	<h1>This is heading 1</h1>
+	<p>This is a paragraph.</p>
+	<a href="https://www.url.com">This is a link</a>
+	<img src="iamge.jpg" alt="image.com" width="104" height="142">
+	<u> underlined</u>
+	<strike>strikethrough</strike>
+	<sup>superscript</sup>
+	<sub>subscript</sub>
+
+
+HTML Element
+
+ 
+
+HTML Attribute
+•	HTML attributes provide additional information about HTML elements.
+•	Attributes are always written in name-value pairs inside the opening tag of an element
+•	There are two ways to specify the URL in the src attribute:
+1.	 Absolute URL - Links to an external image that is hosted on another website
+2.	Relative URL - Links to an image that is hosted within the website.
+
+ 
+Example:
+1.	<a href="https://www.url.com">Visit W3Schools</a>
+2.	<img src="img_girl.jpg">
+3.	<img src="img_girl.jpg" alt="Girl with a jacket">
+
+
+HTML Style
+<tagname style="property:value;">
+
+Table
+
+ 
+
+
+Example:
+<!DOCTYPE html>
+<html>
+<body>
+<h2>A basic HTML table</h2>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Jon</td>
+    <td>28</td>
+    <td>Russia</td>
+  </tr>
+  <tr>
+    <td> Ray</td>
+    <td>33</td>
+    <td>Australia</td>
+  </tr>
+</table>
+</body>
+</html>
+
+Style table border
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 2px solid slateblue;
+  background-color:aliceblue;
+  border-collapse:collapse;
+  
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%">
+  <tr>
+    <th>Sr No</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Result</th>
+  </tr>
+  
+  <tr>
+    <td>1</td>
+    <td>John Einstein</td>
+    <td>14</td>
+    <td>Pass</td>         
+  </tr>
+  
+  <tr>
+    <td>2</td>
+    <td>Grace Olive</td>
+    <td>15</td>
+    <td>Pass</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+***Colspan***
+<!DOCTYPE html>
+<html>
+<head>
+  <title>colspan</title>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color:lightblue;
+  padding:5px;
+}
+</style>
+</head>
+<body>
+<br>
+<table style="width:100%">
+  <tr>
+    <th COLSPAN="2">Full Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td >Jack</td>
+    <td>Efron</td>
+    <td>33</td>
+  </tr>
+  <tr>
+    <td>Alex</td>
+    <td>Roberts</td>
+    <td>23</td>
+  </tr>
+</table>
+</body>
+</html>	
+
+
+
+
+
+**Rowspan**
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+<caption>Rowspan attribute</caption>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <td>Obama</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>9588676676</td>
+  </tr>
+  <tr>
+    <td>97445655466</td>
+  </tr>
+</table>
+</body>
+</html>
+
+HTML zebra stripes
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
+</head>
+<body>
+
+<h2>Zebra Striped Table</h2>
+
+<table>
+  <tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Points</th>
+  </tr>
+  <tr>
+  <td>pradeep</td>
+  <td>guess</td>
+  <td>100</td>
+  </tr>
+  <tr>
+  <td>losss</td>
+  <td>Griffin</td>
+  <td>$150</td>
+  </tr>
+  <tr>
+  <td>Joe</td>
+  <td>Swanson</td>
+  <td>$300</td>
+  </tr>
+  <tr>
+  <td>Cleveland</td>
+  <td>Brown</td>
+  <td>$250</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+HTML offers web authors three ways for specifying lists of information. All lists must contain one or more list elements. Lists may contain −
+•	<ul> − An unordered list. This will list items using plain bullets.
+•	<ol> − An ordered list. This will use different schemes of numbers to list your items.
+•	<dl> − A definition list. This arranges your items in the same way as they are arranged in a dictionary.
+
+
+In Unordered list There are four types of list bullets:
+1.	Disc
+2.	Circle
+3.	Square
+4.	None
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+</head>
+<body>
+    <ul type="circle">
+        <h4>Fruits</h4>
+        <li>Mango</li>
+        <li>Orange</li>
+        <li>Watermelon</li>
+      </ul>  
+      
+      <ol>
+        <h4>Vegetables</h4>
+        <li>Brinjal</li>
+        <li>Spinach</li>
+        <li>Potato</li>
+      </ol>
+    
+</body>
+</html>
+
+Syntax by css
+
+<ul style="list-style-type:disc;">
+<ul style="list-style-type:square;">
+<ul style="list-style-type:none;">
+
+
+Syntax for OL
+
+<ol type = "1"> - Default-Case Numerals.
+<ol type = "I"> - Upper-Case Numerals.
+<ol type = "i"> - Lower-Case Numerals.
+<ol type = "A"> - Upper-Case Letters.
+<ol type = "a"> - Lower-Case Letters.
+
+DL list
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Definition List</title>
+   </head>
+    
+   <body>
+    <!--
+<dl> − Defines the start of the list
+<dt> − A term
+<dd> − Term definition
+</dl> − Defines the end of the list
+     -->
+      <dl>
+         <dt><b>HTML</b></dt>
+         <dd>This stands for Hyper Text Markup Language</dd>
+         <dt><b>HTTP</b></dt>
+         <dd>This stands for Hyper Text Transfer Protocol</dd>
+      </dl>
+   </body>
+    
+</html>
+
+
+Task
+ 
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>HTML Layout using Tables</title>
+   </head>
+
+   <body>
+      <table width = "100%" border = "0">
+         
+         <tr>
+            <td colspan = "2" bgcolor = "red">
+               <h1>This is Web Page Main title</h1>
+            </td>
+         </tr>
+         <tr valign = "top">
+            <td bgcolor = "grey" width = "50" height="100">
+               <b>Main Menu</b><br >
+               HTML<br >
+               PHP<br >
+               PERL <br>
+               java<br>
+            </td>
+            
+            <td bgcolor = "green" width = "100" >
+               Technical and Managerial Tutorials
+            </td>
+         </tr>
+         <tr>
+            <td colspan = "2" bgcolor = "#b5dcb3">
+               <center>
+                  Copyright © 2022 webworldnews.com
+               </center>
+            </td>
+         </tr>
+         
+      </table>
+   </body>
+
+</html>
+
+
+ID & Classes
+•	Ids are unique so we can’t apply the same id to different elements as we did in classes
+•	we can style only one element at a time. It is very important to note that Html documents can’t have two elements with the same ids.
+•	Classes can applied to multiple elements
+•	Id’s can be apply for single element
+
+•	<!DOCTYPE html>
+•	<html lang="en">
+•	<head>
+•	    <meta charset="UTF-8">
+•	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+•	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+•	    <title>Document</title>
+•	</head>
+•	<body>
+•	   
+•	<div class="card" id="card1">
+•	    <h2>CARD1</h2>
+•	    <p>This is CARD 1</p>
+•	    </div> 
+•	    <div class="card" id="card2">
+•	    <h2>CARD2</h2>
+•	    <p>This is CARD 2</p>
+•	    </div>
+•	    <div class="card" id="card3">
+•	    <h2>CARD3</h2>
+•	    <p>This is CARD 3</p>
+•	    </div>
+•	  
+•	</body>
+•	</html>
+
+
+
+
+
+Block-Level Elements in HTML
+
+Block elements are elements that begin on a new line. A block element takes up the entire width available for that content. Block-level elements also have a top and bottom margin around the element.
+
+
+Inline Elements in HTML
+Elements that do not start on a new line are referred to as inline elements. It does not begin on a new line and occupies only the necessary width, i.e., the space defined by the tags defining the HTML element,
+
+ 
+Form
+HTML forms are used to collect user input. A form will collect input from site visitors and send it to a back-end application, then it will perform the necessary processing on the passed data
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form >
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" ><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>form</title>
+</head>
+<body>
+<form>
+    <fieldset>
+    <legend>Personal Details</legend>
+    
+
+<p>
+        <label>
+        Salutation
+        <br />
+        <select name="salutation">
+            <option>--None--</option>
+            <option>Mr.</option>
+            <option>Ms.</option>
+            <option>Mrs.</option>
+            <option>Dr.</option>
+            <option>Prof.</option>
+        </select>
+        </label>
+    </p>
+
+    
+
+<p>
+        <label>First name: <input name="firstName" /></label>
+    </p>
+
+    
+
+<p>
+        <label>Last name: <input name="lastName" /></label>
+    </p>
+
+    
+
+<p>
+        Gender :
+        <label><input type="radio" name="gender" value="male" /> Male</label>
+        <label><input type="radio" name="gender" value="female" /> Female</label>
+    </p>
+
+    
+
+<p>
+        <label>Email:<input type="email" name="email" /></label>
+    </p>
+
+    
+
+<p>
+        <label>Date of Birth:<input type="date" name="birthDate"></label>
+    </p>
+
+    
+
+<p>
+        <label>
+        Address :
+        <br />
+        <textarea name="address" cols="30" rows="3"></textarea>
+        </label>
+    </p>
+
+    
+
+<p>
+        <button type="submit">Submit</button>
+    </p>
+
+    </fieldset>
+</form>
+</body>
+</html>
+
+
+
